@@ -46,15 +46,20 @@
       font-size: 18px;
     }
 
+    /* === TEAM CONTAINER (SỬA Ở ĐÂY) === */
     .team-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      /* Chuyển sang Flexbox để căn chỉnh linh hoạt */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Quan trọng nhất: Căn giữa các item trên mỗi hàng */
+      
       gap: 40px;
       width: 90%;
       max-width: 1100px;
-      margin: 60px auto 0;
+      margin: 60px auto;
     }
 
+    /* === CARD === */
     .member-card {
       background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
       border-radius: 16px;
@@ -62,6 +67,10 @@
       box-shadow: 0 6px 20px rgba(255,255,255,0.05);
       transition: all 0.4s ease;
       text-align: center;
+      width: 100%;
+      max-width: 320px;
+      /* Thêm flex-basis để kiểm soát kích thước tốt hơn trong flexbox */
+      flex-basis: 320px;
     }
 
     .member-card:hover {
@@ -107,39 +116,37 @@
       color: #000;
       transform: scale(1.05);
     }
-
-    .bottom-row {
-      grid-column: span 3;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+    
+    /* === XÓA BỎ PHẦN CSS CŨ NÀY === */
+    /*
+    .member-card:nth-child(4) {
+      grid-column: 2 / 3;
     }
+
+    .member-card:nth-child(5) {
+      grid-column: 3 / 4;
+    }
+    */
 
     footer {
       text-align: center;
       color: #777;
       font-size: 14px;
       padding: 40px 0;
-      margin-top: 60px;
+      margin-top: 40px;
       border-top: 1px solid #222;
       width: 100%;
     }
 
+    /* === Responsive === */
     @media (max-width: 900px) {
-      .team-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .bottom-row {
-        grid-column: span 2;
-      }
+      /* Không cần thay đổi nhiều ở đây vì Flexbox đã xử lý tốt */
     }
 
     @media (max-width: 600px) {
+      /* Gần như không cần gì, nhưng có thể điều chỉnh lại gap nếu muốn */
       .team-container {
-        grid-template-columns: 1fr;
-      }
-      .bottom-row {
-        flex-direction: column;
+        gap: 30px;
       }
     }
   </style>
@@ -179,23 +186,21 @@
       </div>
     </div>
 
-    <div class="bottom-row">
-      <div class="member-card">
-        <img src="/NguyenTrongNguyen-066205006041/images/avatar2.png" alt="Nguyễn Trọng Nguyên">
-        <div class="member-info">
-          <h3>Nguyễn Trọng Nguyên</h3>
-          <p>MSSV: 66205006041</p>
-          <a href="/NguyenTrongNguyen-066205006041/index.html" target="_blank">Xem Trang</a>
-        </div>
+    <div class="member-card">
+      <img src="/NguyenTrongNguyen-066205006041/images/avatar2.png" alt="Nguyễn Trọng Nguyên">
+      <div class="member-info">
+        <h3>Nguyễn Trọng Nguyên</h3>
+        <p>MSSV: 66205006041</p>
+        <a href="/NguyenTrongNguyen-066205006041/index.html" target="_blank">Xem Trang</a>
       </div>
+    </div>
 
-      <div class="member-card">
-        <img src="/NguyenTrongDang-087205015258/Image/my.png" alt="Nguyễn Trọng Đăng">
-        <div class="member-info">
-          <h3>Nguyễn Trọng Đăng</h3>
-          <p>MSSV: 87205015258</p>
-          <a href="/NguyenTrongDang-087205015258/index.html" target="_blank">Xem Trang</a>
-        </div>
+    <div class="member-card">
+      <img src="/NguyenTrongDang-087205015258/Image/my.png" alt="Nguyễn Trọng Đăng">
+      <div class="member-info">
+        <h3>Nguyễn Trọng Đăng</h3>
+        <p>MSSV: 87205015258</p>
+        <a href="/NguyenTrongDang-087205015258/index.html" target="_blank">Xem Trang</a>
       </div>
     </div>
   </section>

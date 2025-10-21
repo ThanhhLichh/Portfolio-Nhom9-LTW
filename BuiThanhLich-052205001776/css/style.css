@@ -51,6 +51,7 @@ nav ul {
   gap: 0.5rem;
 }
 
+
 nav a {
   text-decoration: none;
   color: #eee;
@@ -68,6 +69,27 @@ nav a:hover {
   background-color: #e50914;
   color: #fff;
 }
+
+/* ===== Responsive Navigation ===== */
+@media (max-width: 950px) {
+  nav ul {
+    justify-content: center;    
+    flex-wrap: wrap;             /* Cho phép xuống hàng nếu cần */
+    gap: 0.6rem;                 /* Giãn đều các nút */
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-flex;        /* Căn giữa icon + chữ */
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;          /* Thu nhỏ nhẹ */
+    padding: 6px 10px;
+  }
+}
+
 /* --- HOME SECTION --- */
 .home-section {
   min-height: 100vh;
@@ -380,6 +402,8 @@ h1 {
   background-color: #e50914;
   color: #fff; 
 }
+
+
 
 /* --- Divider & Social Links --- */
 hr {
@@ -1276,6 +1300,71 @@ hr {
 .cert-link:hover {
   color: #fff;
   text-shadow: 0 0 8px rgba(229, 9, 20, 0.8);
+}
+
+
+/* === Responsive About Section === */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 80px 4%; /* thu gọn padding ngang */
+  }
+
+  .about-container {
+    padding: 40px 25px; /* giảm padding trong */
+  }
+
+  .about-content {
+    flex-direction: column; /* cho 2 cột xếp dọc */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+
+  .about-right {
+    margin-top: 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr; /*  mỗi hàng 1 item */
+    gap: 1rem;
+  }
+
+  .info-item {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 70px 3%;
+  }
+
+  .about-container {
+    padding: 30px 20px;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .info-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-text {
+    font-size: 0.95rem;
+  }
 }
 
 

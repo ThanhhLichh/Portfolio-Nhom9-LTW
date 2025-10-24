@@ -1,126 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hồ sơ cá nhân</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile - Nguyễn Trọng Nguyên</title>
 
-  <!--SEO-->
-  <meta name="description" content="Hồ sơ cá nhân của Nguyễn Trọng Nguyên - Sinh viên ngành Công nghệ Thông tin, Đại học Giao thông Vận tải TP.HCM. Hồ sơ bao gồm giới thiệu, kỹ năng, học vấn và dự án.">
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!--Bootstrap 5-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome cho icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/NguyenTrongNguyen-066205006041/css/style.css">
 </head>
+
 <body>
 
-  <!--HEADER-->
-  <header class="text-center text-white py-5 header-section">
-    <div class="avatar-wrapper">
-      <img src="images/avatar.png" alt="Ảnh đại diện Nguyễn Trọng Nguyên" class="avatar animate-fadein">
-    </div>
-    <h1 class="fw-bold mt-3">Nguyễn Trọng Nguyên</h1>
-    <p class="lead">Sinh viên - Đại học Giao thông Vận tải TP.HCM</p>
-  </header>
+    <!-- NAVBAR -->
+    <!-- comment: navbar chua logo va menu, sticky-top de luon hien thi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/avatar.png" alt="logo" class="brand-avatar me-2">
+                <div>
+                    <strong>Nguyễn Trọng Nguyên</strong>
+                </div>
+            </a>
 
-  <!--GIỚI THIỆU-->
-  <section class="container py-5">
-    <h2 class="section-title">Giới thiệu bản thân</h2>
-    <p class="intro-text">
-      Mình là sinh viên ngành <strong>Công nghệ Thông tin</strong>, đam mê lập trình web và phát triển phần mềm. 
-      Mục tiêu là trở thành lập trình viên chuyên nghiệp, luôn học hỏi và sáng tạo để tạo ra những sản phẩm có giá trị thực tiễn.
-    </p>
-  </section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <!--NỘI DUNG CHÍNH -->
-  <main class="container mb-5">
-    <div class="row g-4">
-      <!-- CỘT TRÁI -->
-      <aside class="col-md-4">
-        <!-- Liên hệ -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Liên hệ</h3>
-          <ul class="list-unstyled">
-            <li><strong>Email:</strong> <a href="#nguyenppp21@gmail.com">nguyenppp21@gmail.com</a></li>
-            <li><strong>Điện thoại:</strong> 0344 114 907</li>
-            <li><strong>Địa chỉ:</strong> Phường Linh Xuân, TP.HCM</li>
-          </ul>
-        </div>
-
-        <!-- Học vấn -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Học vấn</h3>
-          <p><strong>Đại học Giao thông Vận tải TP.HCM</strong><br>
-          <b>Ngành: </b>Công nghệ Thông tin</p>
-        </div>
-
-        <!-- Sở thích -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Sở thích</h3>
-          <ul>
-            <li>Lập trình & Thiết kế web</li>
-            <li>Nghe nhạc</li>
-            <li>Chơi game</li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- CỘT PHẢI -->
-      <div class="col-md-8">
-        <!-- Kỹ năng -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Kỹ năng</h3>
-          <p>HTML</p>
-          <div class="progress mb-2"><div class="progress-bar" style="width: 80%"></div></div>
-          <p>CSS</p>
-          <div class="progress mb-2"><div class="progress-bar" style="width: 70%"></div></div>
-          <p>JavaScript</p>
-          <div class="progress mb-2"><div class="progress-bar" style="width: 10%"></div></div>
-          <p>Java</p>
-          <div class="progress mb-2"><div class="progress-bar" style="width: 30%"></div></div>
-          <p>Làm việc nhóm</p>
-          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
-        </div>
-
-        <!-- Mục tiêu nghề nghiệp -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Mục tiêu nghề nghiệp</h3>
-          <h6><strong>Hiện tại:</strong></h6>
-          <p>Học hỏi, tích lũy kiến thức và kỹ năng thực hành để chuẩn bị tốt cho công việc trong tương lai.</p>
-          <h6><strong>Dài hạn:</strong></h6>
-          <p>Trở thành lập trình viên Full Stack chuyên nghiệp, có thể thiết kế và phát triển ứng dụng web hoàn chỉnh.</p>
-        </div>
-
-        <!-- Hình ảnh -->
-        <div class="section-box">
-          <h3 class="mb-3 text-primary fw-semibold">Hình ảnh về bản thân</h3>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="image-card">
-                <img src="images/avatar3.png" alt="Ảnh 3 - Nguyễn Trọng Nguyên">
-              </div>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Thông tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career">Nghề nghiệp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobby">Sở thích</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Chứng chỉ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Dự án</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                </ul>
             </div>
-            <div class="col-md-6">
-              <div class="image-card">
-                <img src="images/avatar2.png" alt="Ảnh 2 - Nguyễn Trọng Nguyên">
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </main>
+    </nav>
 
-  <!-- FOOTER -->
-  <footer class="text-center">
-    <p>© 2025 Nguyễn Trọng Nguyên | Designed using Bootstrap 5 ❤️</p>
-  </footer>
+    <!-- BANNER -->
+    <!-- comment: background anh lon, ten va mo ta ngan -->
+    <header class="banner">
+        <div class="banner-overlay"></div>
+        <img src="images/avatar.png" alt="avatar" class="avatar-bg">
+        <div class="container banner-content text-white text-center">
+            <h1 class="mb-1">Nguyễn Trọng Nguyên</h1>
+            <p class="lead mb-1">Sinh viên năm 3 - Trường Đại học Giao Thông Vận Tải TP.HCM</p>
+            <p class="mb-0"></p>
+        </div>
+    </header>
 
-  <!--  Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <main class="container my-5">
+
+        <!-- LAYOUT: 2 cot -> noi dung chinh + cot phai thong tin nhanh -->
+        <section id="about" class="row align-items-start mb-5">
+            <!-- cot trai: thong tin chi tiet -->
+            <div class="col-lg-8">
+                <h3 class="section-title">Thông tin cá nhân</h3>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <!-- comment: mo ta ngan ve ban than -->
+                        <p>Mình là <strong>Nguyên</strong>, sinh viên của trường đại học Giao Thông Vận Tải TP.HCM.
+                            Chuyên ngành Công nghệ thông tin. Đam mê lập trình web và phát triển phần mềm. Thường xuyên
+                            tìm tòi, tự học và phát triển bản thân.</p>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Họ tên:</strong> Nguyễn Trọng Nguyên</li>
+                                    <li><strong>Giới tính: </strong>Nam</li>
+                                    <li><strong>Ngày sinh</strong> 13/01/2005</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><strong>Quê quán:</strong> Xã EaNing, Tỉnh ĐắkLắk</li>
+                                    <li><strong>Học vấn:</strong> sinh viên năm 3 trường đại học GTVT TP.HCM</li>
+                                    <li><strong>Nơi ở hiện tại:</strong> Thủ Đức, TP.HCM</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- comment: anh minh hoa thong tin ca nhan -->
+                        <div class="mt-4 d-flex gap-2 flex-wrap">
+                            <img src="images/anh1.jpg" alt="personal1" class="info-thumb">
+                            <img src="images/anh2.png" alt="personal2" class="info-thumb">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NGHE NGHIEP -->
+                <h3 class="section-title">Thông tin nghề nghiệp</h3>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="mb-1">Kinh nghiệm</h5>
+                        <ul>
+                            <li><strong>Hiện tại là sinh viên năm 3</strong> nên chưa có nhiều kinh nghiệm thực tế</li>
+                            <li>Luôn học hỏi cải thiện bản thân.</li>
+                        </ul>
+                        <h5 class="mt-3">Mục tiêu nghề nghiệp</h5>
+                        <ul>
+                            <li>Thành thạo front-end, Back-end. Phát triển bản thân trở thành lập trình viên full-stack.
+                            </li>
+                            <li>Dẫn đầu trong các lĩnh vực về công nghệ.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SO THICH -->
+                <h3 class="section-title">Sở thích</h3>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Lập trình -->
+                            <div class="card mb-4 shadow-sm w-50 mx-auto">
+                                <img src="images/anhcode.png" alt="anh lap trinh">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lập trình</h5>
+                                    <p class="card-text small">Lập trình front-end</p>
+                                </div>
+                            </div>
+                            <!-- Nghe nhạc -->
+                            <div class="card mb-4 shadow-sm w-50 mx-auto">
+                                <img src="images/anhnhac.png" alt="anh nhac">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nghe nhạc</h5>
+                                    <p class="card-text small">Các bài hát của Sơn Tùng MTP</p>
+                                    <a href="https://www.youtube.com/watch?v=abPmZCZZrFA&list=RDEMeyKnYmm7ScRhnRO9nwOSNA&start_radio=1"
+                                        target="_blank" class="btn btn-outline-light btn-sm">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- CHUNG CHI - GIAI THUONG -->
+                <h3 class="section-title">Chứng chỉ và giải thưởng</h3>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <p> <b>Hiện tại chưa có.</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cot phai: thong tin nhanh, ngon ngu, ky nang -->
+            <aside class="col-lg-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body text-center">
+                        <h4 class="mb-1">Thông tin nhanh</h4>
+                        <ul class="list-unstyled text-start">
+                            <li><strong>Vai trò:</strong> Sinh viên.</li>
+                            <li><strong>Kinh nghiệm thực tế:</strong> Chưa có.</li>
+                            <li><strong>Mục tiêu:</strong> Trở thành Lập trình viên full-stack.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NGON NGU -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body ">
+                        <h4 style="text-align: center">Ngôn ngữ</h4>
+                        <div class="mb-2">
+                            <strong>Tiếng Việt:</strong> Tiếng mẹ đẻ.
+                        </div>
+                        <div class="mb-3">
+                            <strong>Tiếng anh:</strong> Thông thạo cơ bản
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KY NANG -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 style="text-align: center">Kỹ Năng</h4>
+
+                        <!-- FRONTEND -->
+                        <h6 class="text-accent mb-2">Frontend</h6>
+                        <div class="mb-2">
+                            <span class="badge bg-primary me-1">HTML5</span>
+                            <span class="badge bg-primary me-1">CSS3</span>
+                            <span class="badge bg-primary me-1">JavaScript</span>
+                        </div>
+                        <div class="mt-2 mb-3">
+                            <p class="mb-1 small">HTML<span class="float-end">80%</span></p>
+                            <div class="skill-bar frontend">
+                                <div class="skill-level" data-skill="80%"></div>
+                            </div>
+                            <p class="mb-1 small">CSS<span class="float-end">60%</span></p>
+                            <div class="skill-bar frontend">
+                                <div class="skill-level" data-skill="60%"></div>
+                            </div>
+                            <p class="mb-1 small mt-2">JavaScript <span class="float-end">20%</span></p>
+                            <div class="skill-bar frontend">
+                                <div class="skill-level" data-skill="20%"></div>
+                            </div>
+                        </div>
+
+                        <!-- BACKEND -->
+                        <h6 class="text-accent mb-2">Backend</h6>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary me-1">Java</span>
+                            <span class="badge bg-secondary me-1">Spring Boot</span>
+                            <span class="badge bg-secondary me-1">API REST</span>
+                        </div>
+                        <div class="mt-2 mb-3">
+                            <p class="mb-1 small">Java / Spring Boot <span class="float-end">40%</span></p>
+                            <div class="skill-bar backend">
+                                <div class="skill-level" data-skill="40%"></div>
+                            </div>
+
+                            <p class="mb-1 small mt-2">Xử lý dữ liệu / API <span class="float-end">25%</span></p>
+                            <div class="skill-bar backend">
+                                <div class="skill-level" data-skill="25%"></div>
+                            </div>
+                        </div>
+
+                        <!-- CƠ SỞ DỮ LIỆU -->
+                        <h6 class="text-accent mb-2">Cơ sở dữ liệu</h6>
+                        <div class="mb-2">
+                            <span class="badge bg-success me-1">MySQL</span>
+                            <span class="badge bg-success me-1">JPA / Hibernate</span>
+                        </div>
+                        <div class="mt-2">
+                            <p class="mb-1 small">MySQL <span class="float-end">85%</span></p>
+                            <div class="skill-bar database">
+                                <div class="skill-level" data-skill="85%"></div>
+                            </div>
+
+                            <p class="mb-1 small mt-2">JPA / Hibernate <span class="float-end">20%</span></p>
+                            <div class="skill-bar database">
+                                <div class="skill-level" data-skill="20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </aside>
+        </section>
+
+        <!-- DU AN -->
+        <section id="projects" class="mb-5">
+            <h3 class="section-title ">Dự án</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card shadow-sm">
+                        <img src="images/duan.png" class="card-img-top" alt="project1">
+                        <div class="card-body">
+                            <h5 class="card-title">Website Profile</h5>
+                            <p class="card-text small">Front-end: HTML, CSS, Bootstrap, JS.</p>
+                            <a href="https://github.com/nguuyenn/Profile_me" target="_blank" class="btn btn-outline-light btn-sm">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIEN HE -->
+        <section id="contact" class="mb-5">
+            <h3 class="section-title ">Liên hệ</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Họ và tên</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Thông điệp</label>
+                                    <textarea class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Gửi thông điệp</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h5>Chi tiết liên hệ</h5>
+                            <p class="mb-1"><i class="fa fa-envelope me-2"></i> Email: Nguyenppp21@gmail.com</p>
+                            <p class="mb-1"><i class="fa fa-phone me-2"></i> Số điện thoại: 0344114907</p>
+                            <p class="mb-1"><i class="fa fa-map-marker-alt me-2"></i> Địa chỉ: Linh Tây, Thủ Đức, TP.HCM
+                            </p>
+
+                            <div class="mt-3">
+                                <a href="https://www.facebook.com/nguyen1301.hiro" target="_blank" class="me-2"><i
+                                        class="fab fa-facebook fa-lg"></i></a>
+                                <a href="https://github.com/nguuyenn" target="_blank" class="me-2"><i
+                                        class="fab fa-github fa-lg"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NUT CUON LEN DAU TRANG -->
+    <button id="scrollTopBtn" title="Ve dau trang"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-dark text-center text-muted">
+        <div class="container">
+            <p style="color: #b9f1de;"> Nguyễn Trọng Nguyên - Thiết kế bằng HTLM/CSS</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/NguyenTrongNguyen-066205006041/js/script.js"></script>
 </body>
+
 </html>

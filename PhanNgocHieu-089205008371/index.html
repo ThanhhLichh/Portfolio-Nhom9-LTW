@@ -1,365 +1,319 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <title>Phan Ngọc Hiếu - Personal Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Portfolio HTML Template" name="keywords" />
-    <meta content="Portfolio HTML Template" name="description" />
-
-   
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:500,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS Libraries -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <!-- Header Start -->
-    <div class="top-header" id="top-header">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <img src="img/hieu.jpg" alt="Phan Ngọc Hiếu" />
-          </div>
-
-          <div class="col-md-12">
-            <h1>Mình là Phan Ngọc Hiếu </h1>
-          </div>
-
-          <div class="col-md-12">
-            <p>Sinh viên trường Đại Học Giao Thông Vận Tải TP.HCM</p>
-            <h2></h2>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Phan Ngọc Hiếu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner/Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#home">Hiếu</a></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <div class="container">
+       <!-- Header Section -->
+<header id="home">
+  <div class="profile-container">
+    <div class="profile-img">
+      <img src="images/hieu.jpg" alt="Phan Ngọc Hiếu">
+    </div>
+    <div class="profile-info">
+      <h1>Phan Ngọc Hiếu</h1>
+      <p class="subtitle">Sinh viên Công nghệ Thông tin - Đại học Giao Thông Vận Tải TP.HCM</p>
+      <p class="tagline">💡 Front-end Developer | Web Enthusiast | Code with Passion 💻</p>
+      <div class="header-btns">
+        <a href="#projects" class="btn-demo">Xem Dự Án</a>
+        <a href="#contact" class="btn-github">Liên Hệ</a>
       </div>
     </div>
-    <!-- Header End -->
+  </div>
+</header>
 
-    <!-- Nav Start -->
-    <div class="header">
-      <div class="container">
-        <div class="logo pull-left">
-          <h1><a href="index.html">Home</a></h1>
+<section class="section" id="about">
+    <h2>Thông Tin Cá Nhân & Sở Thích</h2>
+    <div class="about-grid">
+        <div class="info-card">
+            <h3>👤 Họ và Tên</h3>
+            <p>Phan Ngọc Hiếu</p>
         </div>
-
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li><a href="#top-header">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#skills">Kỹ năng</a></li>
-            <li><a href="#portfolio">Dự án</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-          </ul>
-        </nav>
-
-        <nav class="nav social-nav pull-right d-none d-lg-inline">
-          <a href="https://www.facebook.com/phen.hiu.984/" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/phen.hiu/"><i class="fa fa-instagram"></i></a>
-          <a href="https://github.com/Hieu-0611"><i class="fa fa-github"></i></a>
-        </nav>
-      </div>
+        <div class="info-card">
+            <h3>🎂 Tuổi</h3>
+            <p>20 tuổi</p>
+        </div>
+        <div class="info-card">
+            <h3>💼 Nghề nghiệp</h3>
+            <p>Sinh viên</p>
+        </div>
+        <div class="info-card">
+            <h3>📍 Địa chỉ</h3>
+            <p>TP. Hồ Chí Minh</p>
+        </div>
     </div>
-    <!-- Nav End -->
 
-    <!-- About Me Start -->
-    <div class="about" id="about">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 col-lg-4">
-            <img class="img-fluid" src="img/hieu.jpg" alt="Hiếu" />
-          </div>
+    <p class="intro-text">
+        Xin chào! Mình là sinh viên năm ba ngành Công nghệ Thông Tin, khóa 23 của Đại học Giao Thông Vận Tải TP.HCM. Mình đang học phát triển web và ứng dụng vì thích cảm giác biến ý tưởng thành thứ có thể hoạt động thật.
+    </p>
 
-          <div class="col-md-6 col-lg-8">
-            <header class="section-header">
-              <h2>Giới thiệu</h2>
-            </header>
-            <h3><strong>Tên:</strong> Phan Ngọc Hiếu</h3>
-            <p><b>Ngày sinh:</b> 06/11/2005</p>
-            <p><b>Tuổi:</b> 20</p>
-            <p><b>Sở thích:</b> Nghe nhạc, nhảy và chơi game</p>
-
-
-            <p>
-              Mình là đang là sinh viên năm ba, Khóa 23 ngành Công nghệ Thông tin tại Đại học Giao Thông Vận Tải TP.HCM. Giờ mình đang học phát triển web và ứng dụng, vì mình thích cảm giác làm ra 
-               thứ có thể chạy được theo ý mình.
-            </p>
-            <p>
-              Ngoài code, mình thích nhảy, nghe nhạc và học cái mới. 
-              Mình muốn giỏi hơn từng ngày, đơn giản vậy thôi. 
-            </p>
-            <a href="#contact">Liên hệ mình</a>
-          </div>
-        </div>
-      </div>
+    <h3 style="margin-top: 30px;">🎯 Sở Thích</h3>
+    <div class="hobbies">
+        <div class="hobby-tag">🎵 Nghe nhạc Việt, Kpop và USUK</div>
+        <div class="hobby-tag">💃 Nhảy nhạc Kpop</div>
+        <div class="hobby-tag">🧠 Chơi game Liên Quân và Genshin Impact</div>
+        <div class="hobby-tag">☕ Chill nhẹ, yên tĩnh một mình</div>
+        <div class="hobby-tag">📚 Đọc sách, đặc biệt những cuốn sách về tâm lý</div>
     </div>
-    <!-- About Me End -->
 
-    <!-- Skills Start -->
-    <div class="experience" id="skills">
-      <div class="container">
-        <header class="section-header">
-          <h3>Kỹ Năng</h3>
-        </header>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skills">
-              <h3>Front-End</h3>
-              <div class="skill-name">
-                <p>HTML / CSS</p>
-                <p>60%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-
-              <div class="skill-name">
-                <p>JavaScript</p>
-                <p>45%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="45"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-
-              <div class="skill-name">
-                <p>React</p>
-                <p>60%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skills">
-              <h3>Back-End</h3>
-              <div class="skill-name">
-                <p>Python</p>
-                <p>45%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="45"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-
-              <div class="skill-name">
-                <p>Node.js</p>
-                <p>35%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="35"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-
-              <div class="skill-name">
-                <p>MySQL</p>
-                <p>40%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="40"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Nút kéo xuống phần liên hệ -->
+    <div style="text-align: center; margin-top: 25px;">
+        <a href="#contact" class="scroll-btn">📩 Liên hệ với mình</a>
     </div>
-    <!-- Skills End -->
+</section>
 
-    <!-- Portfolio Start -->
-    <div class="portfolio" id="portfolio">
-      <div class="container">
-        <header class="section-header">
-          <h3 class="section-title">Dự án</h3>
-          <p>
-            Một vài sản phẩm nhóm mình từng làm trong hành trình học lập trình
-          </p>
-        </header>
 
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio-1.png" class="img-fluid" alt="" />
-                <h4 class="portfolio-title">
-                  Booking Tour <span>Python & React Native</span>
-                </h4>
-              </figure>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio-2.png" class="img-fluid" alt="" />
-                <h4 class="portfolio-title">
-                  Portfolio <span>HTML / CSS / JS</span>
-                </h4>
-              </figure>
-            </div>
-          </div>
+   <!-- Hướng đi tương lai -->
+<section class="section">
+  <h2>🎯 Hướng Đi Tương Lai</h2>
+  <div class="future-goals">
 
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio-3.png" class="img-fluid" alt="" />
-                <h4 class="portfolio-title">
-                  Chat App <span>Python Asyncio</span>
-                </h4>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="goal-item">
+      <h3>📅 Mục tiêu ngắn hạn (1-2 năm)</h3>
+      <p>Hoàn thành tốt chương trình đại học, đạt kết quả học tập xuất sắc. Tiếp tục trau dồi kỹ năng lập trình Front-end và Back-end, đặc biệt là React, Node.js và Python.</p>
     </div>
-    <!-- Portfolio End -->
 
-    <!-- Contact Start -->
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h3>Thông tin liên hệ</h3>
-        </div>
+    <div class="goal-item">
+      <h3>🚀 Mục tiêu dài hạn (3-5 năm)</h3>
+      <p>Trở thành lập trình viên full-stack có năng lực vững vàng. Tham gia vào các dự án thực tế, đóng góp cho cộng đồng lập trình và hướng đến vị trí leader trong nhóm phát triển phần mềm.</p>
+    </div>
 
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="contact-info">
-              <p><i class="fa fa-user"></i>Phan Ngọc Hiếu</p>
-              <p><i class="fa fa-tag"></i>Developer & Dreamer</p>
-              <p><i class="fa fa-map-marker"></i>TP. Hồ Chí Minh</p>
-              <p>
-                <i class="fa fa-envelope"></i
-                ><a href="mailto:hieu@example.com">hieu12210033@gmail.com</a>
-              </p>
-              <p><i class="fa fa-phone"></i><a href="#">094325334</a></p>
-              <div class="social">
-                <a href="https://www.facebook.com/phen.hiu.984/" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/phen.hiu/"    target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/Hieu-0611" target="_blan"><i class="fa fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form">
-              <form>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Tên của bạn"
-                  />
+    <div class="goal-item">
+      <h3>💡 Định hướng phát triển</h3>
+      <p>Tập trung nghiên cứu AI và công nghệ web hiện đại. Phát triển các sản phẩm có giá trị ứng dụng cao. Mục tiêu cuối cùng là xây dựng thương hiệu cá nhân trong lĩnh vực công nghệ và tham gia khởi nghiệp với dự án riêng.</p>
+    </div>
+
+  </div>
+</section>
+
+
+        <!-- Kỹ Năng -->
+        <section class="section" id="skills">
+            <h2>💻 Kỹ Năng Lập Trình</h2>
+            
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>HTML & CSS</span>
+                    <span class="skill-percentage">65%</span>
                 </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="65%"></div>
                 </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    rows="5"
-                    placeholder="Tin nhắn..."
-                  ></textarea>
-                </div>
-                <div><button type="submit">Gửi</button></div>
-              </form>
             </div>
-          </div>
-        </div>
-      </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span class="skill-percentage">45%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="45%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>React</span>
+                    <span class="skill-percentage">55%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="55%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Node.js</span>
+                    <span class="skill-percentage">35%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="35%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Python</span>
+                    <span class="skill-percentage">45%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="45%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>SQL</span>
+                    <span class="skill-percentage">40%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%" data-width="40%"></div>
+                </div>
+            </div>
+
+           
+        </section>
+
+        <!-- Dự Án -->
+       <section class="section" id="projects">
+  <h2>🚀 Dự Án Đã Thực Hiện</h2>
+
+  <div class="project-card">
+    <h3>Game Cờ Caro Online</h3>
+    <p><strong>Công nghệ:</strong> React Native, Python (FastAPI), WebSocket</p>
+    <p>Xây dựng trò chơi cờ caro online cho phép hai người chơi thi đấu trực tiếp qua mạng. Hỗ trợ đăng nhập, tạo phòng, chat và xử lý real-time bằng WebSocket.</p>
+    <div class="project-links">
+      <a href="#" class="btn-demo">Demo</a>
+      <a href="https://github.com/hoThanhThien/caro-game" target="_blank" class="btn-github">GitHub</a>
     </div>
-    <!-- Contact End -->
+  </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="copyright">
-         <p>&copy; 2025 Phan Ngọc Hiếu | Cảm ơn đã ghé, chúc một ngày nhiều năng lượng</p>
-        </div>
-      </div>
+  <div class="project-card">
+    <h3>Website Bán Trang Sức</h3>
+    <p><strong>Công nghệ:</strong> React, Node.js, MySQL</p>
+    <p>Phát triển website bán trang sức với giao diện hiện đại, thân thiện. Hỗ trợ quản lý sản phẩm, giỏ hàng, thanh toán và tìm kiếm thông minh. Backend xử lý bằng Node.js, kết nối MySQL.</p>
+    <div class="project-links">
+      <a href="#" class="btn-demo">Demo</a>
+      <a href="https://github.com/tnqtr/Nhom2_ID04_congnghephanmem" target="_blank" class="btn-github">GitHub</a>
     </div>
+  </div>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div class="project-card">
+    <h3>Portfolio Cá Nhân</h3>
+    <p><strong>Công nghệ:</strong> HTML, CSS,</p>
+    <p>Thiết kế và phát triển trang portfolio giới thiệu bản thân, kỹ năng và các dự án. Giao diện tinh gọn, hiện đại và có hiệu ứng animation nhẹ nhàng.</p>
+    <div class="project-links">
+      <a href="#" class="btn-demo">Demo</a>
+      <a href="#" class="btn-github">GitHub</a>
+    </div>
+  </div>
 
-    <!-- JS Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
-<script src="lib/sticky/sticky.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="lib/typed/typed.min.js"></script>
-
-<script src="js/main.js"></script>
-    <script>
   
-  const bars = document.querySelectorAll("#skills .progress-bar");
+</section>
 
- 
-  window.addEventListener("load", () => {
-    bars.forEach(bar => {
-      const value = bar.getAttribute("aria-valuenow"); 
-      bar.style.width = value + "%"; 
-    });
-  });
-</script>
 
-  </body>
+     
+       <!-- Liên Hệ -->
+<section class="section" id="contact">
+  <h2>📞 Liên Hệ</h2>
+  <p class="contact-intro">
+    Nếu bạn có bất kỳ câu hỏi nào hoặc muốn hợp tác, đừng ngần ngại liên hệ với tôi qua các kênh sau:
+  </p>
+
+  <div class="contact-grid">
+    <a href="#" class="contact-item">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div class="contact-label">Điện Thoại/Zalo</div>
+      <div class="contact-value">0943253234</div>
+    </a>
+
+    <a href="#" class="contact-item">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div class="contact-label">Email</div>
+      <div class="contact-value">hieu12210033@gmail.com</div>
+    </a>
+
+    <a href="https://www.facebook.com/phen.hiu.984" target="_blank" class="contact-item">
+      <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="contact-label">Facebook</div>
+      <div class="contact-value">Ngọc Hiếu</div>
+    </a>
+
+    <a href="https://www.instagram.com/phen.hiu/" target="_blank" class="contact-item">
+      <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+      <div class="contact-label">Instagram</div>
+      <div class="contact-value">phen.hiu</div>
+    </a>
+
+    <a href="https://github.com/Hieu-0611" target="_blank" class="contact-item">
+      <div class="contact-icon"><i class="fab fa-github"></i></div>
+      <div class="contact-label">GitHub</div>
+      <div class="contact-value">Hieu-0611</div>
+    </a>
+  </div>
+</section>
+
+<!-- Link Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; Cảm ơn bạn đã ghé thăm portfolio của mình. Hy vọng chúng ta có thể hợp tác hoặc trao đổi thêm về công nghệ trong tương lai!</p>
+            <p>Thiết kế bởi chính tôi với ❤️</p>
+        </footer>
+    </div>
+
+    <script>
+        // Animation cho thanh tiến độ
+        window.addEventListener('load', function() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            setTimeout(() => {
+                progressBars.forEach(bar => {
+                    const targetWidth = bar.getAttribute('data-width');
+                    bar.style.width = targetWidth;
+                });
+            }, 500);
+        });
+
+        // Animation khi scroll đến phần kỹ năng
+        const observerOptions = {
+            threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    const progressBars = entry.target.querySelectorAll('.progress-fill');
+                    progressBars.forEach(bar => {
+                        const targetWidth = bar.getAttribute('data-width');
+                        bar.style.width = targetWidth;
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scroll cho navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
